@@ -1,0 +1,19 @@
+{
+  "name": "token-distributor",
+  "version": "1.0.0",
+  "description": "Merkle tree based token distribution contract",
+  "scripts": {
+    "format": "prettier --write .",
+    "format:check": "prettier --check .",
+    "lint:sol": "forge fmt --check",
+    "lint:sol:fix": "forge fmt"
+  },
+  "devDependencies": {
+    "prettier": "^3.0.0",
+    "prettier-plugin-solidity": "^1.3.0"
+  },
+  "engines": {
+    "node": ">=16.0.0"
+  }
+}
+

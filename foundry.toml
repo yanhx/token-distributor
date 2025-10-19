@@ -1,0 +1,29 @@
+[profile.default]
+src = "src"
+out = "out"
+libs = ["lib"]
+auto_detect_solc = true
+optimizer = true
+optimizer_runs = 10000
+via_ir = false
+ffi = true
+use_literal_content = true
+
+# Remappings configuration
+
+remappings = [
+    "forge-std/=lib/forge-std/src/",
+    "@openzeppelin/contracts/=lib/openzeppelin-contracts/contracts/",
+    "@openzeppelin/contracts-upgradeable/=lib/openzeppelin-contracts-upgradeable/contracts/",
+]
+
+[fuzz]
+runs = 2000
+seed = '0x1'
+
+[dependencies]
+
+[rpc_endpoints]
+localhost = "http://localhost:8545/"
+eth = "https://eth-mainnet.g.alchemy.com/v2/${API_KEY_ALCHEMY}"
+sepolia = "https://eth-sepolia.g.alchemy.com/v2/${API_KEY_ALCHEMY}"
